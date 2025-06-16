@@ -1,0 +1,234 @@
+/* NUEVO ESTILO MODERNO PARA PORTAFOLIO CESAR HUAMBO - CON RESPONSIVE */
+
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header .subheading {
+    font-size: 1.3rem;
+    color: #d1ecf1;
+}
+
+.down-arrow svg path {
+    fill: #fff;
+    transition: fill 0.3s;
+}
+
+.down-arrow:hover svg path {
+    fill: #00d1b2;
+}
+
+/* Navegación */
+.navbar-custom {
+    background-color: white !important;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-custom .nav-link {
+    color: #0074D9 !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #FF4136 !important;
+}
+
+/* Secciones */
+section {
+    padding: 60px 15px;
+}
+
+section h4 {
+    text-align: center;
+    font-size: 2rem;
+    color: #0074D9;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.bg-pink {
+    background: #FF4136 !important;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.badge-info {
+    background-color: #0074D9 !important;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+a {
+    color: #0074D9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.cc-effect img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cc-effect figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+
+/* Footer */
+.footer {
+    background: #001f3f;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer .btn i {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .btn:hover i.fa-envelope {
+    color: #FF851B;
+}
+
+.footer .btn:hover i.fa-github {
+    color: #ffffff;
+}
+
+.footer .btn:hover i.fa-linkedin {
+    color: #0077B5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .subheading {
+        font-size: 1rem;
+    }
+
+    .profile img.circular {
+        width: 120px;
+        height: 120px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .navbar-custom .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-custom .nav-link {
+        display: block;
+        padding: 10px;
+    }
+
+    section h4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .badge-info {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer .btn i {
+        font-size: 1.2rem;
+    }
+}
